@@ -10,59 +10,59 @@ import quetta from '../public/imgs/quetta.jpg'
 
 const data = [
     {
-        city:'karachi',
-        position:[24.8607, 67.0011],
+        city:'Mombasa',
+        position:[-4.0435, 39.6682],
         img:karachi,
-        desc:'Karachi is one of the world\'s fastest growing cities, and has communities representing almost every ethnic group in Pakistan. Karachi is built on a coastal plains with scattered rocky outcroppings, hills and coastal marshlands.',
-        rating: 4
+        desc:'Welcome to Mombasa: where cultures converge and nature enchants. Explore the Old Town\s maze of history and dive into the beauty of Diani Beach. Inland, Shimba Hills beckon with wildlife and waterfalls. Discover the magic of Mombasa, where every moment is an adventure.',
+        rating: 5
     },
     {
-        city:'islamabad',
-        position:[33.559707,73.168945],
+        city:'Kisumu',
+        position:[-0.0917, 34.7672],
         img:islamabad,
-        desc:'Islamabad is known for the presence of several parks and forests, including the Margalla Hills National Park and the Shakarparian.',
+        desc:'Discover Kisumu: where Lake Victoria meets urban charm! Explore markets, lakeside views, and vibrant streets. Whether nature, history, or adventure calls, Kisumu welcomes you.',
         rating:5
     },
     {
-        city:'multan',
-        position:[30.197979,71.472498],
+        city:'Nakuru',
+        position:[-0.3031, 36.0804],
         img:multan,
-        desc:'On the Punjab on the banks of the Chenab River, Multan is almost in the centre of Pakistan, and one of the oldest cities in Asia. It\'s famous for its mosques and shrines as well as its cotton crops and fruit – especially mangoes.',
+        desc:'Explore Lake Nakuru\'s flamingos, rhinos, and lions. Immerse in local culture, then hike or discover hidden waterfalls. Nakuru promises an unforgettable Rift Valley adventure.',
         rating:4.5
     },
     {
-        city:'quetta',
-        position:[30.1798,66.9750],
+        city:'Nairobi',
+        position:[-1.2864, 36.8172],
         img:quetta,
-        desc:'Quetta is known as the fruit basket of Pakistan producing plums, peaches, pomegranates, apricots, apples, melons, cherries, pistachios and almonds',
+        desc:'Welcome to Nairobi: where Africa\'s heartbeat meets urban charm! Explore bustling markets, savor diverse cuisine, and encounter wildlife in Nairobi National Park. Experience the magic of this vibrant city, where adventure awaits at every turn.',
         rating:4
     },
     {
-        city:'gilgit',
-        position:[35.8819,74.4643],
+        city:'Turkana',
+        position:[ 3.2849, 35.5371],
         img:gilgit,
-        desc:'Gilgit was an important city on the Silk Road, along which Buddhism was spread from South Asia to the rest of Asia. It is considered as a Buddhism corridor from which many Chinese monks came to Kashmir to learn and preach Buddhism.',
+        desc:'Discover Turkana: where adventure meets beauty! Explore vast landscapes, meet the resilient Turkana people, and witness stunning sunsets. A journey to remember awaits in Kenya\'s largest county.',
         rating:5
     },
     {
-        city:'lahore',
-        position:[31.5204,74.3587],
+        city:'Naivasha',
+        position:[ -0.7172, 36.4315],
         img:lahore,
-        desc:'Lahore is the city of wonders with a rich history of over a millennium. Lahore the 2nd largest city of Pakistan and is capital of province Punjab. Lahore is referred to as cultural heart of Pakistan.',
+        desc:'Nature\'s haven awaits! Explore Lake Naivasha\'s tranquil shores, lush flower farms, and stunning Rift Valley views. Experience Kenya\'s beauty in every moment.',
         rating:4.5
     },
     {
-        city:'peshawar',
-        position:[34.0151,71.5249],
+        city:'Maasai Mara',
+        position:[-1.4050, 35.0624 ],
         img:peshawar,
-        desc:'It is the biggest city of Khyber Pakhtunkhwa and is a relatively prosperous city. It is also a cultural and economic hub of Khyber Pakhtunkhwa. The city is famous for its food and tourism.',
+        desc:'Maasai Mara National Reserve: Famous for its incredible wildlife, including the annual wildebeest migration, the Mara is a paradise for safari enthusiasts.',
         rating:5
     },
     {
-        city:'gwadar',
-        position:[25.2460,62.2861],
+        city:'Samburu ',
+        position:[0.7171, 37.6723],
         img:gwadar,
-        desc:'Gwadar port is the cardinal part of the China Pakistan Economic project and it holds chief importance in the extension of silk route. It is a port on the coasts of ArabianSea which is serving as a hub for Pakistan.',
+        desc:'Home to unique wildlife species such as the reticulated giraffe, Grevy\'s zebra, and Somali ostrich, Samburu offers a distinct safari experience.',
         rating:4
     }
 ]
