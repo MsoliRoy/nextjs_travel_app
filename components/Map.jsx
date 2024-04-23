@@ -48,7 +48,7 @@ import { MapCard } from './MapCard';
   })
   
  var nairobi = new Icon({
-    iconUrl:'/imgs/nairobi.jpeg',
+    iconUrl:'/imgs/nairobi.jpg',
     iconSize:[55,55],
     className:'rounded-full object-cover border-[3px] hover:border-primary transition-all hover:border-[3px]'
   })
@@ -107,7 +107,7 @@ const Map = () => {
         <MapCard subTitle='cosmopolitan' img='/imgs/nairobi.jpg' title='Nairobi City' desc='Nairobi: Kenyas capital city offers a blend of urban attractions and natural beauty, including Nairobi National Park, the Giraffe Centre, and the Karen Blixen Museum.' />
         </Popup>
       </Marker>
-      <Marker  icon={kisumu} key={9} position={[35.8819,74.4643]}>
+      <Marker  icon={kisumu} key={9} position={[ -0.0917, 34.7672]}>
         <Popup closeButton={false}>
         <MapCard subTitle='cosmopolitan' img='/imgs/kisumu.jpg' title='Kisumu' desc='Welcome to Kisumu, Kenya-s vibrant lakeside city! Explore bustling markets, tranquil lakeside views, and rich culture. With its stunning scenery and warm hospitality, Kisumu promises an unforgettable experience for travelers. ' />
         </Popup>
