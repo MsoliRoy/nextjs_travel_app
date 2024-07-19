@@ -6,6 +6,16 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 type Props = {}
 
 export const Footer = (props: Props) => {
+    // URLs for the social media pages
+  const facebookUrl = 'https://www.facebook.com/your-page';
+  const twitterUrl = 'https://twitter.com/your-page';
+  const whatsappUrl = 'https://wa.me/011464906';
+  const instagramUrl = 'https://www.instagram.com/your-page';
+
+  // Function to handle the click event and open the URL
+  const handleClick = (url: string) => {
+    window.open(url, '_blank');
+  };
   return (
     <div id='footer' className='p-4 md:rounded-tl-full bg-slate-700 text-white flex items-center md:flex-row flex-col justify-between flex-wrap'>
         <h1 className='text-2xl mx-10 font-bold flex flex-col mr-[40px] font-heading w-fit'>
@@ -19,10 +29,23 @@ export const Footer = (props: Props) => {
             <li className='mx-4 my-3 lg:my-0  py-1 px-4 rounded-xl hover:bg-secondary hover:text-white cursor-pointer transition-all'>Contact Us</li>
         </ul>
         <div className='flex flex-1 items-center justify-end'>
-            <FacebookIcon className='text-white p-1 cursor-pointer hover:bg-primary/80 bg-primary rounded-full mx-1' fontSize='medium' />
-            <TwitterIcon className='text-white p-1 cursor-pointer hover:bg-primary/80 bg-primary rounded-full mx-1' fontSize='medium'/>
-            <WhatsAppIcon className='text-white p-1 cursor-pointer hover:bg-primary/80 bg-primary rounded-full mx-1' fontSize='medium'/>
-            <InstagramIcon className='text-white p-1 cursor-pointer hover:bg-primary/80 bg-primary rounded-full mx-1' fontSize='medium'/>
+            <FacebookIcon className='text-white p-1 cursor-pointer hover:bg-primary/80 bg-primary rounded-full mx-1' 
+             fontSize='medium'
+             onClick={() => handleClick(facebookUrl)}
+             />
+            <TwitterIcon className='text-white p-1 cursor-pointer hover:bg-primary/80 bg-primary rounded-full mx-1' 
+             fontSize='medium'
+             onClick={() => handleClick(twitterUrl)}
+             />
+            <WhatsAppIcon className='text-white p-1 cursor-pointer hover:bg-primary/80 bg-primary rounded-full mx-1' 
+             fontSize='medium'
+             onClick={() => handleClick(whatsappUrl)}
+             />
+            <InstagramIcon className='text-white p-1 cursor-pointer hover:bg-primary/80 bg-primary rounded-full mx-1' 
+            fontSize='medium'
+            onClick={() => handleClick(instagramUrl)}
+            />
+
         </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
+import Link from 'next/link';
 
 type Props = {}
 
@@ -13,10 +14,36 @@ export const Navbar = (props: Props) => {
         </h1>
         <button className='hover:bg-slate-100 p-2 rounded-[50%] lg:hidden ' onClick={()=>setNav(e=>!e)}  ><MenuIcon/></button>
         <ul className='flex flex-wrap w-full font-medium bg-white rounded-b-2xl shadow-md lg:shadow-none items-center flex-col my-2 lg:flex-row lg:w-auto lg:my-0 lg:bg-transparent  lg:ml-auto'>
-            <li className='mx-4 my-3 lg:my-0  py-1 px-4 rounded-xl hover:bg-secondary hover:text-white cursor-pointer transition-all'><a href="#tours">Tours</a></li>
-            <li className='mx-4 my-3 lg:my-0  py-1 px-4 rounded-xl hover:bg-secondary hover:text-white cursor-pointer transition-all'><a href="#guide">Our Guides</a> </li>
-            <li className='mx-4 my-3 lg:my-0  py-1 px-4 rounded-xl hover:bg-secondary hover:text-white cursor-pointer transition-all'><a href="#footer"></a> About us</li>
-            <li className='mx-4 my-3 lg:my-0  py-1 px-4 rounded-xl hover:bg-secondary hover:text-white cursor-pointer transition-all'><a href="#form">Contact Us</a></li>
+
+        <li className='mx-4 my-3 lg:my-0 py-1 px-4 rounded-xl hover:bg-secondary hover:text-white cursor-pointer transition-all'>
+              <Link href="/">
+                <a aria-label="Navigate to Destinations page">Home</a>
+              </Link>
+            </li>
+            <li className='mx-4 my-3 lg:my-0 py-1 px-4 rounded-xl hover:bg-secondary hover:text-white cursor-pointer transition-all'>
+              <Link href="/destinations">
+                <a aria-label="Navigate to Destinations page">Destinations</a>
+              </Link>
+            </li>
+            <li className='mx-4 my-3 lg:my-0 py-1 px-4 rounded-xl hover:bg-secondary hover:text-white cursor-pointer transition-all'>
+              <Link href="/excursion">
+                <a aria-label="Navigate to Destinations page">Excursions</a>
+              </Link>
+            </li>
+            <li className='mx-4 my-3 lg:my-0 py-1 px-4 rounded-xl hover:bg-secondary hover:text-white cursor-pointer transition-all'>
+              <Link href="/aboutus">
+                <a aria-label="Navigate to Destinations page">About us</a>
+              </Link>
+            </li>
+
+            <li className='mx-4 my-3 lg:my-0 py-1 px-4 rounded-xl hover:bg-secondary hover:text-white cursor-pointer transition-all'>
+              <Link href="/contactus">
+                <a aria-label="Navigate to Destinations page">Contact Us</a>
+              </Link>
+            </li>
+           
+           
+
         </ul>
     </div>
   )

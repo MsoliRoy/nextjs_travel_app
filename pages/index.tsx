@@ -66,6 +66,25 @@ const Home: NextPage = () => {
     setShowAlert(true)
     setTimeout(()=>setShowAlert(false),10000)
   }
+
+  const maasaimaraTourDescription = (
+    <p>
+  An exquisite tour of the Maasai Mara
+    </p>
+  );
+
+  const deepblueSwimmingDescription = (
+    <p>
+  Go swimming in the beautiful deep blue
+    </p>
+  );
+
+  const lakeNaivashaDescription = (
+    <p>
+  Flowing from the glaciers of Lake Naivasha
+    </p>
+  );
+  
   return (
     <div>
       <Head>
@@ -101,9 +120,9 @@ const Home: NextPage = () => {
         <BigCard/>
         </div>
         <div id='guide' ref={accordions.ref} className={`flex flex-col transition-all duration-[2000ms] ease-in-out ${accordions.inView ? 'translate-y-[0vh] opacity-100' : 'translate-y-[20vh] opacity-0'} `}>
-        <AccordionCard title={'Maasai Mara'} price={'12000'} desc={'An exquisite tour of the Maasai Mara'} img={mountains}   />
-        <AccordionCard title={'Nyali Beach'} price={'15000'} desc={'Go swimming in the beautiful deep blue'} img={beach}   />
-        <AccordionCard title={'Lake Naivasha'} price={'18000'} desc={'Flowing from the glaciers of Lake Naivasha'} img={river}   />
+        <AccordionCard title={'Maasai Mara'} price={'$120'} desc={maasaimaraTourDescription} img={mountains}   />
+        <AccordionCard title={'Nyali Beach'} price={'$150'} desc={deepblueSwimmingDescription} img={beach}   />
+        <AccordionCard title={'Lake Naivasha'} price={'$180'} desc={lakeNaivashaDescription} img={river}   />
         </div>
         </div>
         <div className='flex justify-center md:flex-row flex-col mt-20 mb-10 mx-10'>
